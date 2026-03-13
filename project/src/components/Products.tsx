@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { supabase } from '../lib/supabase';
-import { Plus, Search, CreditCard as Edit2, Trash2, Package, AlertTriangle } from 'lucide-react';
+import { Plus, Search, SquarePen, Trash2, Package, AlertTriangle } from 'lucide-react';
 import type { Database } from '../types/database';
 import { useLanguage } from '../contexts/LanguageContext';
 
@@ -189,7 +189,7 @@ export function Products() {
                             className="p-2 text-blue-600 hover:bg-blue-50 rounded-lg transition"
                             title={t('edit')}
                           >
-                            <Edit2 className="w-4 h-4" />
+                            <SquarePen className="w-4 h-4" />
                           </button>
                           <button
                             onClick={() => deleteProduct(product.id)}
