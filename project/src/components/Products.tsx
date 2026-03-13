@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { supabase } from '../lib/supabase';
-import { Plus, Search, SquarePen, Trash2, Package, AlertTriangle } from 'lucide-react';
+import { Plus, Search, SquarePen, Trash2, Package, TriangleAlert as AlertTriangle } from 'lucide-react';
 import type { Database } from '../types/database';
 import { useLanguage } from '../contexts/LanguageContext';
 
